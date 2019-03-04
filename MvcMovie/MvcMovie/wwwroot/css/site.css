@@ -1,0 +1,28 @@
+﻿body p {
+    font-size: 16px;
+}
+
+#title-and-create-link {
+    margin-bottom: 20px;
+}
+
+div.container.body-content {
+    margin-top: 40px;
+}
+
+.product-header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-columns: 30% 10% 10% 10% 30%;
+    font-weight: bold;
+    border-top: 1px #dee2e6 solid;
+    padding-top: 10px;
+}
+
+.movie-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-columns: 30% 10% 10% 10% 30%;
+    border-top: 1px #dee2e6 solid;
+    padding-top: 10px;
+}

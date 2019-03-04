@@ -1,0 +1,30 @@
+﻿@model List<MovieModel>
+
+@section Title{
+    Index
+}
+
+<div id="title-and-create-link">
+    <h1>Index</h1>
+    
+    <a href="#"><p>Create New</p></a>
+</div>
+
+<div class="product-header">
+    <p>Title</p>
+    <p>Release Date</p>
+    <p>Genre</p>
+    <p>Price</p>
+</div>
+
+
+@foreach(var item in Model)
+{
+    <div class="movie-row">
+        <p>@item.Title</p>
+        <p>@item.ReleaseYear</p>
+        <p>@item.Genre</p>
+        <p>@item.Price.ToString("C")</p>
+        <p><a href="#">Edit</a> | <a href="#">Details</a> | <a href="#">Delete</a></p>
+    </div>
+}
